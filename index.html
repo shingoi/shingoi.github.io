@@ -4,15 +4,98 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <meta name="description" content="Shingoiのポートフォリオページです。">
+    <title>Shingoi Portfolit</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cardo:400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid contents">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="top-section">
+        <div class="contents">
+            <h1>Shingoi</h1>
+        </div>
+    </div>
+    <div class="about-section contents" id="about">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h5 class="panel-title">ABOUT Shingoi</h5>
+            </div>
+            <div class="panel-body">
+                <p>
+                    北海道出身<br>
+                    東京に出てきてウン十年、いくつかの会社でのサラリーマン人生を経て、フリーランスのエンジニアを目指して勉強中です。<br>
+                    現在、<a href="https://techacademy.jp" target="_blank">TECHACADEMY</a>にてWebアプリケーションコースを受講しています。
+                </p>
+                <i class="fa fa-github fa-lg" aria-hidden="true"></i><a href="https://github.com/shingoi" target="_blank"> https://github.com/shingoi</a>
+            </div>
+        </div>
+    </div>
+    <div class="works-section contents" id="works">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h5 class="panel-title">WORKS</h5>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <h4>Message Board</h4>
+                        <div class="works-img img-thumbnail" style="background-image:url(img/message-board-sample.png)">
+                            <div class="hide-item"></div>
+                        </div>
+                        <p>メッセージのやりとりが出来る掲示板アプリ</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h4>Twitter Clone</h4>
+                        <div class="works-img img-thumbnail" style="background-image:url(img/microposts_following.png)">
+                            <div class="hide-item"></div>                        </div>
+                        <p>Twitterと同じ機能を持たせたクローンサイト</p>
+                    </div>
+                </div>
+               <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <h4>Mono List</h4>
+                        <div class="works-img img-thumbnail" style="background-image:url(img/monolist-sample.png)">
+                            <div class="hide-item"></div>                        </div>
+                        <p>楽天APIを活用したアイテムシェアサービス</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h4>Original Service</h4>
+                        <div class="works-img img-thumbnail" style="background-image:url(img/denkyuu_eco.png)">
+                            <div class="hide-item"></div>                        </div>
+                        <p>自分のアイデアをカタチにしたWebサービス</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2016 Shingoi</p>
+    </footer>
   </body>
 </html>
